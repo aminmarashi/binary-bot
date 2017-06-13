@@ -1,4 +1,6 @@
 import * as actions from '../constants/actions';
+import * as properties from '../constants/properties';
+import { updatePropertyAction } from '../tools';
 import standardAction from './standardAction';
 
 export const initialize = standardAction(actions.INITIALIZE);
@@ -20,3 +22,5 @@ export const purchaseDone = standardAction(actions.PURCHASE_DONE);
 export const receiveAllProposals = standardAction(actions.RECEIVE_ALL_PROPOSALS);
 
 export const requestPurchase = standardAction(actions.REQUEST_PURCHASE);
+
+export const updateReceivedBalance = standardAction(updatePropertyAction(properties.RECEIVED_BALANCE));

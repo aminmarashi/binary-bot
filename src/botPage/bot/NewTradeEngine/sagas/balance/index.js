@@ -1,5 +1,5 @@
 import { call, take, put } from 'redux-saga/effects';
-import updateReceivedBalance from '../../actions/updateReceivedBalance';
+import { updateReceivedBalance } from '../../actions/standard';
 import dataStream from '../dataStream';
 import requestBalance from './requestBalance';
 
@@ -11,10 +11,10 @@ export default function* balance(arg) {
         let payload = yield take(channel);
         while (payload) {
             const { balance: balanceObj } = payload;
-            yield put(updateReceivedBalance({ payload: balanceObj }));
+            yield put(updateReceivedBalance(balanceObj));
             payload = yield take(channel);
         }
-    } catch (payload) {
-        yield put(updateReceivedBalance({ payload, error: true }));
+    } catch (error) {
+        yield put(updateReceivedBalance(error, true));
     }
 }
