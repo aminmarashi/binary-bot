@@ -1,5 +1,6 @@
 import { testSaga } from 'redux-saga-test-plan';
-import updateWaitingForPurchase from '../../../actions/updateWaitingForPurchase';
+import { translate } from '../../../../../../common/i18n';
+import { updateWaitingForPurchase } from '../../../actions/standard';
 import * as actions from '../../../constants/actions';
 import * as states from '../../../constants/states';
 import * as selectors from '../../selectors';
@@ -9,6 +10,7 @@ const newTick = 12345;
 const dummyErrorAction = { error: true };
 const dummyStayInsideAction = { stayInsideScope: true };
 const dummyGoOutAction = { stayInsideScope: false };
+const error = Error(translate('Bot should be started before calling watch function'));
 
 describe('newTickWatcher saga', () => {
     it('should throw error if stage is INITIALIZED', () => {
@@ -16,7 +18,7 @@ describe('newTickWatcher saga', () => {
             .next()
             .select(selectors.stage)
             .next(states.INITIALIZED)
-            .call(updateWaitingForPurchase, { error: true })
+            .call(updateWaitingForPurchase, error, true)
             .next(dummyErrorAction)
             .put(dummyErrorAction)
             .next()

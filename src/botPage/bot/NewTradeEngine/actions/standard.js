@@ -24,3 +24,5 @@ export const receiveAllProposals = standardAction(actions.RECEIVE_ALL_PROPOSALS)
 export const requestPurchase = standardAction(actions.REQUEST_PURCHASE);
 
 export const updateReceivedBalance = standardAction(updatePropertyAction(properties.RECEIVED_BALANCE));
+
+export const updateWaitingForPurchase = standardAction(updatePropertyAction(properties.WAITING_FOR_PURCHASE));
