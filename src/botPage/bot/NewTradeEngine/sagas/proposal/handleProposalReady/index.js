@@ -1,5 +1,5 @@
 import { put, select, take } from 'redux-saga/effects';
-import receiveAllProposals from '../../../actions/receiveAllProposals';
+import { receiveAllProposals } from '../../../actions/standard';
 import { updatePropertyAction } from '../../../tools';
 import * as properties from '../../../constants/properties';
 import * as selectors from '../../selectors';

@@ -3,7 +3,7 @@ import { expectSaga } from 'redux-saga-test-plan';
 import { select } from 'redux-saga/effects';
 import { tradeOptionToProposal } from '../../../tools';
 import proposalInfo from '../../actions/proposalInfo';
-import receiveAllProposals from '../../actions/receiveAllProposals';
+import { receiveAllProposals } from '../../actions/standard';
 import proposal from './';
 import * as properties from '../../constants/properties';
 import * as selectors from '../selectors';
