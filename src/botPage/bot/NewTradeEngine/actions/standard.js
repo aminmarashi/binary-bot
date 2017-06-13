@@ -14,3 +14,5 @@ export const initSaga = standardAction(actions.INIT_SAGA);
 export const startSaga = standardAction(actions.START_SAGA);
 
 export const purchaseSaga = standardAction(actions.PURCHASE_SAGA);
+
+export const purchaseDone = standardAction(actions.PURCHASE_DONE);
