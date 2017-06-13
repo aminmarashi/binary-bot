@@ -24,6 +24,8 @@ describe('balance saga', () => {
             .next(data)
             .put(updateReceivedBalance({ payload }))
             .next()
+            .take(fakeChannel)
+            .next(undefined)
             .isDone();
     });
     it('should put updateReceivedBalance error with the thrown error', () => {

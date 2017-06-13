@@ -12,6 +12,7 @@ const arg = { $scope, token, type: 'balance' };
 const fakeChannel = dataStream(arg);
 const payload = { balance: '12.00', currency: 'USD' };
 const data = { balance: payload };
+let firstBalance = true;
 
 describe('balance channel integration', () => {
     it('should put UPDATE_RECEIVED_BALANCE', () =>
@@ -22,7 +23,11 @@ describe('balance channel integration', () => {
                 {
                     take({ channel }, next) {
                         if (channel === fakeChannel) {
-                            return data;
+                            if (firstBalance) {
+                                firstBalance = false;
+                                return data;
+                            }
+                            return undefined;
                         }
                         return next();
                     },
