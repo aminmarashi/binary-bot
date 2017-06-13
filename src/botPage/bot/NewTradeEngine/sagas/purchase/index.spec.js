@@ -1,6 +1,5 @@
 import { testSaga } from 'redux-saga-test-plan';
-import requestPurchaseAction from '../../actions/requestPurchase';
-import { purchaseDone } from '../../actions/standard';
+import { purchaseDone, requestPurchase as requestPurchaseAction } from '../../actions/standard';
 import * as selectors from '../selectors';
 import proposal from '../proposal';
 import requestPurchase from './requestPurchase';
