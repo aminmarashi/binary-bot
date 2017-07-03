@@ -51,7 +51,7 @@
 
 .trade-chart {
   display: flex;
-  height: 20em;
+  height: 100%;
   flex-direction: column;
   flex: 1; }
   .trade-chart #trade-chart0,
@@ -173,8 +173,8 @@
 
 @font-face {
   font-family: 'fontello';
-  src: url("../font/fontello.eot?18169098");
-  src: url("../font/fontello.eot?18169098#iefix") format("embedded-opentype"), url("../font/fontello.woff2?18169098") format("woff2"), url("../font/fontello.woff?18169098") format("woff"), url("../font/fontello.ttf?18169098") format("truetype"), url("../font/fontello.svg?18169098#fontello") format("svg");
+  src: url("../font/fontello.eot?47424536");
+  src: url("../font/fontello.eot?47424536#iefix") format("embedded-opentype"), url("../font/fontello.woff2?47424536") format("woff2"), url("../font/fontello.woff?47424536") format("woff"), url("../font/fontello.ttf?47424536") format("truetype"), url("../font/fontello.svg?47424536#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -184,7 +184,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?18169098#fontello') format('svg');
+    src: url('../font/fontello.svg?47424536#fontello') format('svg');
   }
 }
 */
@@ -263,6 +263,10 @@
   content: '\e80b'; }
 
 /* '' */
+.icon-trading-view:before {
+  content: '\e810'; }
+
+/* '' */
 .icon-info:before {
   content: '\f129'; }
 
@@ -271,6 +275,10 @@
   content: '\f160'; }
 
 /* '' */
+.icon-chart-line:before {
+  content: '\f201'; }
+
+/* '' */
 #summaryPanel {
   border-radius: 4px;
   border: 1px solid #f2f2f2;
@@ -285,7 +293,7 @@
 .draggable-dialog {
   display: none; }
   .draggable-dialog .content {
-    padding: 0 15px 15px 15px;
+    padding: 0 5px;
     background: #ffffff;
     cursor: default; }
     .draggable-dialog .content table {
@@ -346,6 +354,9 @@
 
 #tradeInfo {
   margin-bottom: 10px; }
+
+#chart-dialog-component, #trading-view-dialog-component {
+  width: 100% !important; }
 
 .blocklyText {
   fill: #000000 !important; }
@@ -795,4 +806,4 @@ html, body {
 .show-on-load {
   display: none; }
 
-/*# sourceMappingURL=bot-ae72cb6b58.css.map */
+/*# sourceMappingURL=bot-bcacfd7f7f.css.map */
