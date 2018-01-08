@@ -154,7 +154,7 @@
   background: #f2f2f2;
   border-radius: 3px;
   min-width: 1em;
-  padding: 0.3em 0.3em;
+  padding: 0em 0.5em;
   flex: 1;
   align-items: center; }
 
@@ -323,31 +323,31 @@
   cursor: default; }
 
 .warn .react-grid-Cell {
-  background: #fbeed5; }
+  background: #FBEED5; }
 
 .success .react-grid-Cell {
-  background: #dff0d8; }
+  background: #DFF0D8; }
 
 .error .react-grid-Cell {
-  background: #f2dede; }
+  background: #F2DEDE; }
 
 .info .react-grid-Cell {
-  background: #d9edf7; }
+  background: #D9EDF7; }
 
 .ui-widget .react-grid-Main {
   outline: none; }
 
 .ui-widget .react-grid-Grid {
-  border: 1px solid #f2f2f2; }
+  border: 1px solid #F2F2F2; }
 
 .ui-widget .react-grid-Cell {
-  border-bottom: 1px solid #f2f2f2;
-  border-right: 1px solid #f2f2f2; }
+  border-bottom: 1px solid #F2F2F2;
+  border-right: 1px solid #F2F2F2; }
 
 .ui-widget .react-grid-HeaderCell {
   font-size: 14px;
-  border-bottom: 1px solid #f2f2f2;
-  border-right: 1px solid #f2f2f2; }
+  border-bottom: 1px solid #F2F2F2;
+  border-right: 1px solid #F2F2F2; }
 
 .ui-widget .react-grid-Row {
   font-size: 14px; }
@@ -355,16 +355,8 @@
 #tradeInfo {
   margin-bottom: 10px; }
 
-#chart-dialog-component,
-#trading-view-dialog-component {
+#chart-dialog-component, #trading-view-dialog-component {
   width: 100% !important; }
-
-.icon-close {
-  width: 1.5em !important;
-  height: 1.5em !important; }
-
-.ui-dialog-content {
-  padding: 0px !important; }
 
 .blocklyText {
   fill: #000000 !important; }
@@ -399,12 +391,10 @@
 .blocklyIconShape {
   fill: #2a3052 !important; }
 
-.blocklyIconGroup:not(:hover),
-.blocklyIconGroupReadonly {
+.blocklyIconGroup:not(:hover), .blocklyIconGroupReadonly {
   opacity: 1 !important; }
 
-.blocklyScrollbarVertical,
-.blocklyScrollbarHorizontal {
+.blocklyScrollbarVertical, .blocklyScrollbarHorizontal {
   display: none; }
 
 .blocklyTreeRow {
@@ -457,8 +447,7 @@
     margin: 0.2em; }
   .reality-check #realityDuration {
     margin-left: 0.2em; }
-  .reality-check button,
-  .reality-check a {
+  .reality-check button, .reality-check a {
     float: right;
     margin-bottom: 0em;
     margin-right: 0.5em;
@@ -702,15 +691,13 @@
   float: right;
   button-margin-left: 0.1em; }
 
-html,
-body {
+html, body {
   height: 100%;
   margin: 0em;
   max-width: 100%;
   max-height: 100%;
   overflow-x: hidden;
-  overflow-y: hidden;
-  font-size: 1em; }
+  overflow-y: hidden; }
 
 #blocklyDiv {
   position: absolute;
@@ -734,8 +721,7 @@ body {
 .icon-remove:before {
   content: 'X'; }
 
-#header select,
-#topbar select {
+#header select, #topbar select {
   color: #000;
   font-size: 1em; }
 
@@ -774,17 +760,13 @@ body {
 .account {
   font-size: 16px; }
 
-#account-list {
-  margin-right: 2em; }
-
 .btn-primary {
   color: #ffffff !important;
   text-decoration: none !important;
   background: #2e8836 !important;
   border-color: #2e8836 !important; }
 
-.btn-primary:active,
-.btn-primary:hover {
+.btn-primary:active, .btn-primary:hover {
   color: #ffffff !important;
   text-decoration: none !important;
   background-color: #14602b !important;
@@ -805,8 +787,7 @@ body {
   display: none; }
 
 .languages {
-  z-index: 100;
-  right: 1.5em; }
+  z-index: 99; }
 
 #select_language {
   top: -3px; }
@@ -825,10 +806,4 @@ body {
 .show-on-load {
   display: none; }
 
-.react-grid-HeaderCell {
-  padding: 0px !important; }
-
-label {
-  margin-bottom: 0px; }
-
-/*# sourceMappingURL=bot-6d23dee5a7.css.map */
+/*# sourceMappingURL=bot-bcacfd7f7f.css.map */
